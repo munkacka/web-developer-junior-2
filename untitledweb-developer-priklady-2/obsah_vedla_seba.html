@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            .main {
+                margin: 0 auto; /* Dany prikaz vycentruje obsah do stredu */
+                width: 1200px; /* A nastavime velkost obsahu na 1200 obrazovych bodov */
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            /* Container for flexboxes */
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                text-align: center;
+
+            }
+
+            /* Create four equal columns */
+            .left-column {
+                width: 50%;
+                padding: 0px;
+                background-color: red;
+                /*height: 600px;*/
+            }
+
+            .right-column {
+                width: 50%;
+                padding: 0px;
+                background-color: blue;
+                /*height: 600px;*/
+            }
+
+
+            /* On screens that are 992px wide or less, go from four columns to two columns */
+            @media screen and (max-width: 500px) {
+                .column {
+                    flex: 50%;
+                }
+            }
+
+            /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 600px) {
+                .row {
+                    flex-direction: column;
+                }
+            }
+        </style>
+<body>
+
+
+<div class="main">
+    <h2>O mne</h2>
+
+    <div class="row">
+        <div class="left-column">
+            <img src="martina kostalova1.jpg" width="20%"/>
+        </div>
+
+        <div class="right-column">
+            <h2></h2>
+            <p><strong>Volám sa Martina Košťálová. Pochádzam z Hlohovca. Pracujem pre Finančnú správu Slovenskej republiky ako správca daní
+                v Trnave. Momentálne čerpám materskú dovolenku.</strong></p>
+        </div>
+    </div>
+
+    <div class="row">
+        <p>Bla Bla</p>
+    </div>
+
+</div>
+</body>
+</html>
+
+

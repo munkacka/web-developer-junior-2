@@ -1,0 +1,70 @@
+.hlavny {
+    border: red solid thick;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.hlavicka {
+    /*border: blue solid thick;*/
+    background-color: blue;
+    margin-top: -60px;
+    min-height: 50px;
+    position: fixed;
+    width: 1200px;
+}
+.riadok {
+    border: seagreen solid thick;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+@media screen and (max-width: 600px) {
+    .riadok, .riadok2 {
+        flex-direction: column;
+    }
+}
+.lavy {
+    border: black solid thick;
+    flex: 1;
+}
+.pravy {
+    border: black solid thick;
+    flex: 2;
+}
+.lavy-prvy {
+    background-color: aqua;
+    min-height: 300px;
+}
+.lavy-druhy {
+    background-color: coral;
+    height: 400px;
+}
+.pravy-prvy {
+    background-color: crimson;
+    min-height: 300px;
+}
+.pravy-druhy {
+    background-color: darkmagenta;
+    min-height: 200px;
+}
+.riadok2 {
+    border: greenyellow solid thick;
+    display: flex;
+    gap: 10px;
+    min-height: 100px;
+}
+.lavy2 {
+    border: lightblue solid thick;
+    flex: 2;
+}
+.pravy2 {
+    border: green solid thick;
+    flex: 1;
+}
+.patka {
+    border: darkorange solid thick;
+    min-height: 70px;
+}

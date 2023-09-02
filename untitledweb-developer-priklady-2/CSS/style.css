@@ -1,0 +1,75 @@
+*{
+    border-radius:25px;
+    padding: 10px
+
+}
+.hlavný {background-color:darkgrey;/ Zložená zátvorka cez klávesovú skratku Alt gr + B/
+margin: 0 auto;
+    max-width: 1200px;
+    /*padding: 10px*/
+}
+.hlavička {
+    background-color: aqua;
+    height: 50px;
+}
+.riadok{
+    display: flex;
+    flex-direction: row;
+    padding: 0px
+}
+.ľavý {background-color: orange;
+    flex: 3;
+
+
+}
+.stredný{background-color: green;
+    flex: 1;
+
+}
+.pravý{background-color: hotpink;
+    flex: 1;
+    text-align:match-parent;
+}
+.pätka{background-color: coral;
+    padding: 10px
+}
+@media screen and (max-width: 600px){
+    .riadok {
+        flex-direction: column;
+        padding: 0px}
+}
+.obrazok{
+    width:20% ;
+    height: 20%;
+    float: left;
+    margin-right: 10px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+}
+
+a:visited{
+    color:aquamarine;
+}
+.logo{
+    color:salmon;
+    font-size: 32px;
+    font-family: "Arial Black";
+
+
+}
+/*todo umiestni logo do ľavej hornej časti webovej stránky */
+
+div ul{
+    list-style:square;
+    padding:10px;
+    margin: ;
+}
+div li{
+    display: inline-block;
+    margin-right: 50px;
+}
